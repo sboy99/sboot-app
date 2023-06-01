@@ -36,19 +36,18 @@ jobs:
                 os: [ubuntu-20.04, ubuntu-22.04]
                 browser: [chrome, firefox]
                 device: [desktop, mobile]
-                
+
             include:
-              - os: windows-latest
-                browser: edge
-                device: desktop
+                - os: windows-latest
+                  browser: edge
+                  device: desktop
 
             exclude:
-              - os: ubuntu-20.04
-                browser: chrome
-                device: mobile
+                - os: ubuntu-20.04
+                  browser: chrome
+                  device: mobile
 
-        runs-on: ${{ matrix.os }}
-
+            runs-on: ${{ matrix.os }}
 
         steps:
             - name: Step inside test job
