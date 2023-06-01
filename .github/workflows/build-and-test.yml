@@ -16,3 +16,11 @@ jobs:
         steps:
             - name: Greet user
               run: echo "Hello $NAME"
+
+            - name: Another step
+              run: echo "This is another step in the same job"
+
+    test:
+        runs-on: ubuntu-22.04
+
+        timeout-minutes: 10
