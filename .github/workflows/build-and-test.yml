@@ -28,9 +28,9 @@ jobs:
         env:
             NAME: Planet
 
-    steps:
-        - name: Step inside test job
-          run: echo "Hello $NAME"
+        steps:
+            - name: Step inside test job
+              run: echo "Hello $NAME"
 
-        - name: Another step
-          run: echo "This is another step in the same job"
+            - name: Another step
+              run: echo "This is another step in the same job"
