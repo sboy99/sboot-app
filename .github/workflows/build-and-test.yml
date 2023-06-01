@@ -48,7 +48,7 @@ jobs:
         steps:
             - name: Demo of how to access current matrix context
               run: |
-                  echo "Browser: ${{ matrix.browser }}
+                  echo "Browser: ${{ matrix.browser }}"
                   echo "Device: ${{ matrix.device }}"
 
             - name: Step inside test job
